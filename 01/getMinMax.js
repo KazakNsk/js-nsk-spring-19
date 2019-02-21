@@ -20,17 +20,14 @@ export function getMinMax(input) {
   let minMax = {};
   minMax.max = -Infinity;
   minMax.min = Infinity;
-  const arr = input.split(/[, ]+/);
-  console.log(arr);
+  let arr = input.split(/[, ]+/);
+  arr = arr.map(value => parseFloat(value));
+  arr = arr.filter(value => !isNaN(value));
   arr.forEach(function (number) {
-    if ((number>minMax.max)  && (!isNaN(number))){
-      number = +number;
+    if (number > minMax.max)
       minMax.max = number;
-    }
-    if (number<minMax.max){
-      number = +number;
-      minMax.max = number;
-    }
-  });
+    if (number < minMax.min)
+      minMax.min = number;
+  })
   return minMax;
 }

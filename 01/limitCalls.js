@@ -20,5 +20,12 @@
  * @return {Function}
  */
 export function limitCalls(fn, maxCalls) {
+  let couter= 0;
 
+  return function result() {
+    if (couter < maxCalls) {
+      fn();
+      couter++;
+    }
+  };
 }
