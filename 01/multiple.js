@@ -14,5 +14,9 @@
  * @return {number}
  */
 export function multiple(a, b) {
-
+  let c = 0;
+  for (let i = 0; i < b; i++){
+    c = c + a;
+  }
+  return c;
 }
