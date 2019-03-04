@@ -43,3 +43,15 @@
     background: radial-gradient( #7690a7a1,#2d878a9d);
 
 }
+
+#start:hover{
+    background: #083b3d;
+    color: aliceblue;
+}
+
+#timerElem{
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    font-size: 150%;
+}

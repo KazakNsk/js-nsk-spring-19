@@ -8,6 +8,7 @@ const inputElem = document.getElementById('inputElem');
 const redAlarm = document.getElementById('redAlarm');
 const gJ = document.getElementById('goodJob');
 const button = document.getElementById('start');
+const timer = document.getElementById('timerElem');
 
 redAlarm.style.color = 'red';
 gJ.style.color = 'green';
