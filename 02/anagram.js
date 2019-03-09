@@ -14,10 +14,9 @@
 export function anagram(first, second) {
   function score(arr) {
     const a = arr.toLowerCase()
-      .split('')
-      .sort()
-      .join();
-
+                 .split('')
+                 .sort()
+                 .join();
     return a;
   }
   return score(first) === score(second);

@@ -11,5 +11,8 @@
  * @param  {number[]} input исходный массив
  * @return {Set<any>} массив уникальных значений, отсортированный по возрастанию
  */
-export function getUnique(input) {
+export function getUnique(input) { 
+    const arr = input.sort()
+                     .filter((number, index) => number!=input[index+1]);
+    return arr.sort((a,b) => a-b);
 }

@@ -12,4 +12,12 @@
  * @param number
  */
 export function mergeNumbers(number) {
+    let newNumber = String(number);
+    if (newNumber.length > 1){
+    newNumber = newNumber.split('')
+                         .reduce((acc, value) => acc + +value, 0);
+
+    return mergeNumbers(newNumber);
+    }
+    else return newNumber;
 }

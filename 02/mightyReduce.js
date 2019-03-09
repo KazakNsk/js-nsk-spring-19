@@ -12,7 +12,7 @@
  * @param {*[]}      input массив значений
  */
 export function reduceMap(fn, input) {
-}
+    return input.reduce((acc, value) => {acc.push(fn(value)); return acc;}, [])}
 
 /**
  * Напишите функцию reduceFilter(fn, input), создающую новый
@@ -24,5 +24,8 @@ export function reduceMap(fn, input) {
  * @param {Function} fn    функция-предикат
  * @param {*[]}      input массив значений
  */
-export function reduceFilter(fn, input) {
-}
+export function reduceMap(fn, input) {
+    return input.reduce((acc, value) => {
+            if (fn(value))
+                acc.push(value); return acc;}, []);
+  }
