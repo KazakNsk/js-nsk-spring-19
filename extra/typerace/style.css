@@ -52,6 +52,21 @@
 #timerElem{
     position: absolute;
     top: 85%;
-    left: 80%;
-    font-size: 150%;
+    left: 75%;
+    font-size: 120%;
+}
+
+#speed{
+    position: absolute;
+    top: 85%;
+    left: 7%;
+    right: 70%;
+    font-size: 120%;
+    bottom: 8%;
+}
+
+#pause{
+    
+    left: 70%;
+    font-size: 1000%;
 }
